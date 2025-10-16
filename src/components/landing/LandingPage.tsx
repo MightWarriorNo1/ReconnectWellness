@@ -142,16 +142,13 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               className="text-center lg:text-left"
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-4 sm:mb-6">
-                Workplace
+                Everything your team needs to 
                 <span className="bg-gradient-to-r from-teal-600 to-indigo-600 bg-clip-text text-transparent">
-                  {' '}Wellness
+                  {' '}reset and perform
                 </span>
-                <br />
-                Redefined
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-                Transform your team's performance with science-backed wellness protocols. 
-                Boost focus, reduce stress, and create a thriving workplace culture.
+                Reconnect gives employees practical tools to find calm before meetings, recover quickly from stress, and sustain their energy all day.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <motion.button
@@ -265,32 +262,88 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-4"
+              className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto px-4 mb-6"
             >
-              Comprehensive wellness solution that drives measurable results for both employees and organizations
+              Reconnect helps teams recover faster, focus deeper, and perform with calm clarity — in just a few minutes a day.
             </motion.p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex justify-center mb-8"
+            >
+              <div className="w-16 h-0.5 bg-gradient-to-r from-teal-500 to-indigo-600"></div>
+            </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow duration-200"
-              >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-500 to-indigo-600 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                  <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                </div>
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                  {feature.description}
-                </p>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-teal-500 to-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Smart Protocols
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                Guided 2–10 minute sessions that help employees reset stress, regain focus, or recharge energy — right when they need it most.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-center"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <BarChart3 className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Real-Time Feedback
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                Employees track calm, clarity, and energy after each session — seeing immediate results and building lasting habits.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <Users className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Team Insights
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                HR leaders access anonymized trends that reveal how the team is feeling and performing — without exposing personal data.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-center"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Privacy by Design
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                Individual results are never shared. All data stays fully confidential and aggregated, with enterprise-grade protection.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -302,26 +355,26 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
               Simple. Effective. Measurable.
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">
-              Get started in minutes, see results in days
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-2">
+              Start in minutes — feel the difference in days.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="text-center"
             >
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <Target className="w-6 h-6 sm:w-8 sm:h-8 text-teal-600" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <span className="text-2xl sm:text-3xl">1️⃣</span>
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                1. Set Your Baseline
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Set Your Baseline
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                Rate your current calm, clarity, and energy levels before each session
+              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                Check in with your current calm, clarity, and energy levels before each session — to make progress tangible.
               </p>
             </motion.div>
 
@@ -331,14 +384,14 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-center"
             >
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <Play className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <span className="text-2xl sm:text-3xl">2️⃣</span>
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                2. Choose Your Protocol
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Choose Your Protocol
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                Select from focus, energy, calm, or clarity sessions tailored to your needs
+              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                Pick a short, science-based session designed to restore focus, balance, or energy — whenever you need it.
               </p>
             </motion.div>
 
@@ -348,14 +401,14 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-center"
             >
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <span className="text-2xl sm:text-3xl">3️⃣</span>
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                3. Track Your Progress
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                Track Your Progress
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                See immediate improvements and build lasting wellness habits
+              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                See your improvements session after session and build habits that rewire your nervous system for lasting calm and performance.
               </p>
             </motion.div>
           </div>
@@ -414,21 +467,21 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
-              Ready to Transform Your Workplace?
+              Ready to Redefine Employee Performance?
             </h2>
-            <p className="text-lg sm:text-xl text-teal-100 mb-6 sm:mb-8">
-              Join thousands of organizations already using Reconnect to boost employee well-being and performance.
+            <p className="text-lg sm:text-xl text-teal-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
+              We're inviting a select group of companies to join our private beta and experience the impact of short, evidence-backed resets that help teams perform with calm, clarity, and energy.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <button
+            <div className="flex justify-center">
+              <motion.button
                 onClick={onGetStarted}
-                className="bg-white text-teal-600 hover:bg-gray-100 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-colors duration-200 shadow-lg"
+                className="bg-white text-teal-600 hover:bg-gray-100 px-8 sm:px-10 py-4 sm:py-5 rounded-xl font-semibold text-lg sm:text-xl transition-colors duration-200 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 Start Your Free Trial
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-teal-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-200">
-                Schedule Demo
-              </button>
+              </motion.button>
             </div>
           </motion.div>
         </div>
@@ -436,54 +489,13 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 sm:py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-              <div className="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-teal-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-                </div>
-                <span className="text-lg sm:text-xl font-bold">Reconnect</span>
-              </div>
-              <p className="text-sm sm:text-base text-gray-400">
-                Transforming workplace wellness through science-backed protocols and data-driven insights.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Product</h3>
-              <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Enterprise</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">API</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Company</h3>
-              <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Press</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Support</h3>
-              <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Security</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-sm sm:text-base text-gray-400">
-            <p>&copy; 2025 Reconnect. All rights reserved.</p>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-lg sm:text-xl text-gray-300 mb-4">
+            Reduce stress, sustain energy, and improve focus - all in one simple reset platform.
+          </p>
+          <p className="text-sm sm:text-base text-gray-400">
+            © 2025 Reconnect. All right reserved. Made with intentions
+          </p>
         </div>
       </footer>
     </div>
