@@ -18,13 +18,6 @@ const demoSessions = [
     audioUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav', // Demo audio URL
     category: 'meditation'
   },
-  {
-    id: 'calm-center',
-    title: 'Calm Center',
-    description: 'Find your center of calm and peace within.',
-    audioUrl: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav', // Demo audio URL
-    category: 'calm'
-  }
 ];
 
 interface AudioPlayerDemoProps {

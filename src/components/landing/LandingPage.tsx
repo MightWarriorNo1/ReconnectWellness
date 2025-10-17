@@ -367,8 +367,8 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               transition={{ duration: 0.5 }}
               className="text-center"
             >
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-2xl sm:text-3xl">1️⃣</span>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Target className="w-6 h-6 sm:w-8 sm:h-8 text-teal-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                 Set Your Baseline
@@ -384,8 +384,8 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-center"
             >
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-2xl sm:text-3xl">2️⃣</span>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Play className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                 Choose Your Protocol
@@ -401,8 +401,8 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-center"
             >
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-2xl sm:text-3xl">3️⃣</span>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" />
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                 Track Your Progress

@@ -87,7 +87,6 @@ export function MyDataPage({ sessions, onRefresh }: MyDataPageProps) {
       'back-to-baseline': 'Back to Baseline',
       'peak-focus': 'Peak Focus',
       'reset-recharge': 'Reset & Recharge',
-      'calm-center': 'Calm Center',
       'unplug-recover': 'Unplug & Recover'
     };
     return protocolNames[protocolId] || protocolId;

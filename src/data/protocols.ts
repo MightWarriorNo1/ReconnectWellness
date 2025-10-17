@@ -92,24 +92,6 @@ const audioProtocols: AudioProtocol[] = [
       energy: 70
     }
   },
-  {
-    id: 'calm-center',
-    title: 'Calm Center',
-    description: 'Find your inner peace and reduce stress with progressive relaxation techniques. Great for high-stress periods or end-of-day wind-down.',
-    tagline: 'Find your inner peace and balance',
-    duration: 20,
-    category: 'calm',
-    audioUrl: AudioStorageService.getAudioUrl('Unplug and Recover.mp3'),
-    color: 'from-emerald-500 to-emerald-600',
-    whenToUse: 'High-stress periods or end-of-day wind-down',
-    science: 'Progressive relaxation techniques combined with deep breathing to activate the parasympathetic nervous system.',
-    effect: 'Deep relaxation, stress relief, and inner peace',
-    impact: {
-      calm: 90,
-      clarity: 50,
-      energy: 30
-    }
-  }
 ];
 
 export { audioProtocols };
